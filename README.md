@@ -1,2 +1,7 @@
-# movie-dataset
+# Movie Dataset
+
 The movie dataset  was created to assess Truth Discovery solutions, containing information about the Top 250 movies currently on IMDB. It contains values provided by 6 sources: **OMDB**, **TMDB**, **Rotten Tomatoes**, **Allmovies.com**, **justwatch.com**, and **Metacritic**. In total there are 1391 entries in the dataset. A line is comprised by: a **Source ID** that identifies the source, an **IMDb ID** that identifies the movie which the source is providing values for, a **Movie Name** which is self explanatory, a **Genre** for the movie, the movie's **Rating**, and lastly, the **Duration** of the movie.
+
+It is important to note that a source is not required to provide all values simultaneously. There are instances where sources did not have information about a specific value, such as genre or rating. Likewise, a movie is not guaranteed to have always 6 sources providing information about it. There are cases where some sources did not have any registry about a given movie.
+
+In order to assess Truth Discovery solutions, we require accurate data, designated as *Golden Truth*. In `truth/` directory contains the golden truth for this dataset, which was obtained directly from IMDB. Each movie has its acurate Genre, Rating, and Duration present in the `movie_truth-csv`.
